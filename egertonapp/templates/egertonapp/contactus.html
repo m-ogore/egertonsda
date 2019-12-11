@@ -1,0 +1,51 @@
+
+{% extends 'base.html' %}
+ {% load static%}
+ <DOCTYPE html>
+	<html>
+	<head>{%block head%} 
+		<title>EgertonSDA CONTACT</title>
+		{% endblock %}
+		
+	</head>
+	<body>
+		
+			{%block body%}
+		<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<p class="text-center">POSTAL ADDRESS <br/>
+				P.O.BOX 1, EGERTON.<br/>
+				LOCATED APPROXIMATELY 1 KILOMETER FROM EGERTON UNIVERSITY'S GATE.
+				</p><br/>
+				<p class="text-center">>PASTOR'S CONTACTS:<br/>
+				PHONE :0712345678 <br/>
+				EMAIL:PASTOR@MAIL.COM</p><br/>
+				<p class="text-center"><br/>CHIEF ELDER'S CONTACTS:<br/>
+				PHONE :0712345678 <br/>
+				EMAIL:PASTOR@MAIL.COM</p><br/>
+			</div>
+		</div>
+	</div>
+	
+<div class="comtainer">
+		<div class="row">
+			<div class="col-xs-12 " >
+				<h2 class="text-center">SPEAK TO US</h2>
+				<form method="POST">
+					{% csrf_token %}
+					{{ form.as_p }}
+					<input type="submit" name="submit" value="submit">
+				</form>		
+					
+			</div>
+		</div>
+	</div>
+	
+	 {% endblock %}
+
+
+
+
+</body>
+</html>

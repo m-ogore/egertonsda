@@ -1,0 +1,48 @@
+ {% extends 'base.html' %}
+ {% load static%}	
+<DOCTYPE html>
+	<html>
+	<head>
+	{% block head %}
+	{% endblock %}
+	</head>
+	<body onload="startTimer()">
+		
+		{% block body %}
+		<div class="welcome-to">
+
+			<img id="img" src="   {% static 'photos/church.jpg' %} " class="churchimage">
+				<div class="imagetext">
+	<h2>WELCOME TO EGERTON SDA CHURCH</h2>
+					<blockquote><p>Then i saw another angel flying in the midst of heaven having the everlasting gospel to preach to those who dwell on the earth-to every nation,tribe,tongue and nation</p>
+									<footer><i>Revelation 14:6-12</i></footer></blockquote>
+					
+				
+</div>
+</div>
+
+	
+
+		<div class="container" float="left">
+			<div class="row">
+			<div class=" col-md-3 col-xs-3 ">
+				<img  src="  {% static 'photos\pastor.png' %} " class="img-responsive img-rounded">
+			</div>
+			<div class="col-md-9">
+					<h1 class="text-center">Message from pastor</h1>
+				
+				
+				Welcome to 2018 camp meeting. Honor and praises to the Almighty God for bringing us thus this far.  This year camp meeting theme is Behold He is coming.  It is another golden opportunity God has given us to celebrate together as we look forward for His soon return.  As we  come together to share His word with our fellow brothers and sisters,  May we all be found faithful when He comes.  It is my prayer that this Pr. Samuel Onchari years camp meeting will be a blessing as we come and sit at thefeet of Jesus to listen from His  word.  Be blessed
+				</div>
+		</div>
+	</div>
+		{% endblock %}
+		
+	
+				 
+
+		
+		
+		
+		</body>
+	</html>

@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+ {% load static%}
+<DOCTYPE html>
+	<html>
+	<head>
+		{%block head%} 
+		<title>EgertonSDA ELDERS</title>
+		{% endblock %}
+			</script>
+	
+	</head>
+
+	<body onload="startTimer()">
+		</head>
+	<body>
+				{% block body%}
+			<p><u>DUTIES OF THE ELDER</u><br/>
+				<li>Visitation.responsibility towards the spiritual nature and care of members.</li>
+				<li>Worship services.will lead the worship service as scheduled
+				Preaching .they may be asked to preach when the pastor is out of town </li>
+				<li>Spiritual mentor.lead members to seek a deeper spiritual experience<i>1 Timothy 3..</i></li>
+				<li>Church Administration.making a contribution to organization and progress of the church enabling others participate in decision making </li>
+				<li>Member of the church board.</li>
+
+				 <a>see church manual for more</a>
+				The elder's department in Egerton SDA church consists of:</p>
+
+
+			
+			<li><image src="{% static 'photos/elder_rongoei.png' %}" height="150" width="150" align="center">
+				Elder Abraham Rongoei
+
+
+			</li>
+				<li><image src="{% static 'photos/elder_odongo.png' %}" height="150" width="150" align="center">
+				Elder George Odongo
+				
+
+			</li>
+				<li><image src="{% static 'photos/elder_ogendi.png' %}" height="150" width="150" align="center">
+				Elder George Ogendi
+				
+
+			</li>
+			{% endblock %}
+		</body>
+	</html>
+
+		

@@ -1,0 +1,74 @@
+{% load static %}
+.top
+{
+background-color:#4F6068;
+height:100px;
+text-align:center;
+background-image: url('photos/logo.png');
+background-repeat: no-repeat;
+}
+.top-left
+{
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+}
+
+.d
+{
+width:1200px;
+height:50px;
+background-color:#F0F0F0;
+}
+body
+{
+background-image:url('photos/logo.png');
+background-repeat:no-repeat;
+background-size:cover;
+}
+select
+{
+	width:120px;
+	height:50px;
+	font-family: ariel;
+	background-color:#004D4D4D;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	-o-appearance:none;
+
+}
+select::-ms-expand{
+	display:none;
+}
+h2 img
+{
+float:left;
+width:300px;
+}
+.churchimage
+{
+
+	width:1500px;
+	height:700px;
+}
+.imagetext
+{
+	position: absolute;
+	top:8px;
+	left: 16px;
+	color:black;
+}
+.welcome-to
+{
+	position: relative;
+
+}
+.fundamental
+{
+
+	background-image: url("static/photos/fundamental-image.jpg");
+	background-repeat:no-repeat;
+	background-size:contain;
+	
+
+}

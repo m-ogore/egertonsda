@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+       <link rel="stylesheet" type="text/css" href="   {% static 'css/egertonsda.css' %} ">
+		<link rel="stylesheet" type="text/css" href="   {% static 'css/bootstrap.min.css' %} ">
+	    <link rel="stylesheet" type="text/css" href="   {% static 'css/bootstrap-theme.min.css' %}">
+		
+		<script type="text/javascript" src=" {% static 'js/index.js' %} "></script>
+		<script type="text/javascript" src=" {% static 'js/jquery.min.js' %} "></script>
+	    <script type="text/javascript" src=" {% static 'js/bootstrap.min.js' %} "></script>
+	  {% block head %}
+	  <title>EgertonSDA</title>
+	  {% endblock %}
+</head>
+<body>
+ 
+ 		<div class="top">
+		
+			<br/>
+			<select> 
+				<option id="home" onchange="homeredirection();"> HOME</option>
+			</select>
+				<select id="dept" NAME="section" onchange="SelectRedirect();">
+				<option value="departments">DEPARTMENTS</option>
+				<option value="elders">ELDERS</option>
+				<option value="women">WOMEN MINISTRIES</option>
+				<option value="men">ADVENTIST MEN</option>
+				<option value="youth">ADVENTIST YOUTH</option>
+
+			</select>
+			<select id="kalenda" onchange="caLendar();">
+				<option value="calendar"><a href="">CALENDAR</a></option>
+				<option value="events">UPCOMING EVENTS</option>
+			</select>
+			<select id="kuhusu" onchange="aboutUs();">
+				<option value="about">ABOUT US</option>
+				<option value="history">CHURCH HISTORY</option>
+				<option value="beliefs">FUNDAMENTAL BELIEFS</option>
+
+			</select>
+				
+			<select id="us" onChange="RedirectUs();">
+				<option value="calendar">wasiliana</option>
+				<option value="contact">CONTACT US</option>
+				
+
+			</select>
+</div>
+		{% block body%}
+
+	     {% endblock %}
+</body>
+</html>
